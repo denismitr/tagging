@@ -1,0 +1,31 @@
+{
+    "name": "denismitr/laravel-tagging",
+    "description": "A tagging package for Laravel",
+    "authors": [
+        {
+            "name": "Denis Mitrofanov",
+            "email": "denis.mitr@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Denismitr\\Tagging\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.5.0",
+        "illuminate/database": ">= 5.0",
+        "illuminate/support": ">= 5.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.0",
+        "phpunit/phpunit": "~5.0"
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php",
+            "tests/stubs/LessonStub.php",
+            "tests/stubs/TagStub.php"
+        ]
+    }
+}
