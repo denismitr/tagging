@@ -1,6 +1,7 @@
 {
     "name": "denismitr/laravel-tagging",
     "description": "A tagging package for Laravel",
+    "license": "MIT",
     "authors": [
         {
             "name": "Denis Mitrofanov",
