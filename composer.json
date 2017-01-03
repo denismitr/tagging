@@ -2,6 +2,7 @@
     "name": "denismitr/laravel-tagging",
     "description": "A tagging package for Laravel",
     "license": "MIT",
+    "keywords": ["laravel", "tags", "tagging"],
     "authors": [
         {
             "name": "Denis Mitrofanov",
