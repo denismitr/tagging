@@ -1,5 +1,5 @@
 {
-    "name": "denismitr/laravel-tagging",
+    "name": "denismitr/tagging",
     "description": "A tagging package for Laravel",
     "license": "MIT",
     "keywords": ["laravel", "tags", "tagging"],
