@@ -29,10 +29,5 @@
             "tests/stubs/LessonStub.php",
             "tests/stubs/TagStub.php"
         ]
-    },
-    "config": {
-        "preferred-install": "dist",
-        "sort-packages": true
-    },
-    "minimum-stability": "stable"
+    }
 }
