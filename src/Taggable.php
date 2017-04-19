@@ -10,13 +10,22 @@ trait Taggable
 {
     use TaggableScopes, TagUsedScopes;
 
-
+    /**
+     * Get tags relationship
+     *
+     * @return MorphToMany
+     */
     public function tags()
     {
         return $this->morphToMany(Tag::class, 'taggable');
     }
 
-
+    /**
+     * Tag with one or more tags
+     *
+     * @param  array|string|Tag $tags
+     * @return void
+     */
     public function tag($tags)
     {
         $this->addTags(
@@ -24,7 +33,12 @@ trait Taggable
         );
     }
 
-
+    /**
+     * Remove tag or tags
+     *
+     * @param  array|string|Tag $tags
+     * @return void
+     */
     public function untag($tags = null)
     {
         if ($tags === null) {
@@ -38,7 +52,12 @@ trait Taggable
         );
     }
 
-
+    /**
+     * Remove all tags and then add tag or tags
+     *
+     * @param  array|string|Tag $tags
+     * @return void
+     */
     public function retag($tags)
     {
         $this->removeAllTags();
